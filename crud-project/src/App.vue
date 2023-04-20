@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <TextArea/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import TextArea from './components/TextArea.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    'TextArea': TextArea
+  }
 }
 </script>
 
